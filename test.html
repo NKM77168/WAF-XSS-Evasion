@@ -1,0 +1,14 @@
+<html>
+<body>
+  <form method="GET">
+    <input type="text" name="q">
+    <input type="submit">
+  </form>
+  <div>
+    <script>
+      var url = new URL(window.location.href);
+      document.write(url.searchParams.get("q"));
+    </script>
+  </div>
+</body>
+</html>
